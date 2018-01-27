@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800,900');
+/* $bg: #171717;
+$orange: #feb76f;
+$blue: #254963;
+$red: #d6463e;
+$darkred: #c6342d;
+$white: #ffffff;
+$mint: #23b6ab;
+$lightmint: #31d9cc;
+$f2: #fffff2;
+$pink: #ff68a6; */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,html{
+  height: 100%;
+}
+body{
+  font-family: Montserrat;
+  font-weight: 900;
+  background-color: white;
+  color: black;
+  transition: background 0.5s;
+}
+.container{
+  max-width: 760px;
+  margin: auto;
+}
+h1{
+  text-align: center;
+  margin: 50px 0;
+}
+.main-img img, .imgs img{
+  width: 100%;
+}
+.main-img img{
+  height: 500px;
+}
+.imgs img{
+  height: 130px;
+
+}
+.imgs{
+  max-width: 760px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  opacity:  0;
+  animation: fadeIn 0.5s ease-in 1 forwards;
+}
